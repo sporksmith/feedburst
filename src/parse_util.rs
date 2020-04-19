@@ -34,7 +34,7 @@ impl<'a> Buffer<'a> {
 
     pub fn trim_right(&self) -> Buffer<'a> {
         Buffer {
-            text: self.text.trim_right(),
+            text: self.text.trim_end(),
             ..*self
         }
     }
